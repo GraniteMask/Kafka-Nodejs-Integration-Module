@@ -7,6 +7,7 @@ app.use(express.json())
 
 const dbsAreRunning = async () =>{
     const db = new sequelize(process.env.POSTGRES_URL)
+
     const User = db.define('user', {
         name: sequelize.STRING,
         email: sequelize.STRING,
