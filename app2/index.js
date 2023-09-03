@@ -30,3 +30,5 @@ setTimeout(dbsAreRunning, 10000)
 
 
 app.listen(process.env.PORT)
+
+// use `docker-compose up` to start the docker
