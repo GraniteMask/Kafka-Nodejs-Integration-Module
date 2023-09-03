@@ -13,6 +13,8 @@ const dbsAreRunning = async () =>{
         password: sequelize.STRING
     })
 
+    db.sync({ force: true })
+
     const client = new kafka.KafkaClient({ kafkaHost: process.env.KAFKA_BOOTSTRAP_SERVERS})
     const producer = new kafka.Producer(client)
 
