@@ -36,3 +36,5 @@ setTimeout(dbsAreRunning, 10000)
 
 
 app.listen(process.env.PORT)
+
+// postgres://{user}:{password}@{hostname}:{port}/{database-name}
